@@ -7,13 +7,11 @@
     <title>Document</title>
     <script>
       window.onload = function(){
-        const button = document.getElementById("submitNameButton")
-        button.addEventListener('click', submitName)
-
         const box = document.getElementById("openNameBox");
 
         function submitName(){
           window.location.href("answer.html/?name="+box.nodeValue);
+          return false
         }
       }
       
@@ -28,7 +26,7 @@
     <br>
 
     <div style="text-align: center; width: 90vw; height: 10vh; padding-left: 5vw;">
-      <input type="button" id="submitNameButton" style="width: 100%; height: 100%;">Send</button>
+      <input type="button" style="width: 100%; height: 100%;" onclick="submitName();" value="Accept"></button>
     </div>
   </form>
 </body>
