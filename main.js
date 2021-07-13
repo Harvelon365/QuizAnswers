@@ -8,5 +8,5 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 var na = getParameterByName("name")
-var box = document.getElementById("NameBox");
+const box = document.getElementById("NameBox");
 box.nodeValue = na
