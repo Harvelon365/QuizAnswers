@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-      const button = document.getElementById("submitNameButton")
-      button.addEventListener('click', submitName)
+      window.onload = function(){
+        const button = document.getElementById("submitNameButton")
+        button.addEventListener('click', submitName)
 
-      const box = document.getElementById("openNameBox");
+        const box = document.getElementById("openNameBox");
 
-      function submitName(){
-        window.location.href("answer.html/?name="+box.nodeValue);
+        function submitName(){
+          window.location.href("answer.html/?name="+box.nodeValue);
+        }
       }
+      
     </script>
 </head>
 <body>
