@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="myscripts.js"></script>
+    <script>
+        window.onload = function(){
+            var queryString = location.search.substring(1)
+
+            const box = document.getElementById("NameBox");
+            box.nodeValue = queryString
+        }
+    </script>
 </head>
 <body>
     <form
