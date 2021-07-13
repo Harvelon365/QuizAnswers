@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-      var button = document.querySelector("button")
+      var button = document.getElementById("submitNameButton")
       button.addEventListener('click', submitName)
 
       var box = document.getElementById("openNameBox");
@@ -24,7 +24,7 @@
   <br>
 
   <div style="text-align: center; width: 90vw; height: 10vh; padding-left: 5vw;">
-    <button type="button" style="width: 100%; height: 100%;">Send</button>
+    <input type="button" id="submitNameButton" style="width: 100%; height: 100%;">Send</button>
   </div>
 </body>
 </html>
